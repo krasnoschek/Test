@@ -1,0 +1,22 @@
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+//    compile ('org.springframework.security:spring-security-web:3.2.4.RELEASE')
+//    compile ('org.springframework.security:spring-security-config:3.2.4.RELEASE')
+//    compile ('org.springframework.security:spring-security-core:3.2.4.RELEASE')
+
+    compile ('org.springframework:spring-webmvc:4.1.0.RELEASE')
+
+
+//    compile 'org.springframework.data:spring-data-mongodb:1.4.2.RELEASE'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.1.1'
+
+    //for tomcat wirk
+    providedCompile 'org.apache.geronimo.specs:geronimo-servlet_3.0_spec:1.0'
+    compile 'log4j:log4j:1.2.17'
+}
