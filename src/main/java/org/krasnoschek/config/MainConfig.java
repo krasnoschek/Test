@@ -19,11 +19,10 @@ public class MainConfig extends WebMvcConfigurerAdapter {
         return new ObjectMapper();
     }
 
-    /**
-     * Enable default servlet
-     */
+
+    //Enable default servlet
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        configurer.enable();
+//        configurer.enable();
     }
 }

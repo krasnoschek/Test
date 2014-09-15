@@ -18,14 +18,14 @@ public class PostController {
 
         List<Post> posts = new ArrayList<>();
 
-        posts.add(new Post());
-        posts.add(new Post());
-        posts.add(new Post());
-        posts.add(new Post());
+        posts.add(new Post("san", "text"));
+        posts.add(new Post("san", "text"));
+        posts.add(new Post("san", "text"));
+        posts.add(new Post("san", "text"));
 
-        throw new NullPointerException();
+//        throw new NullPointerException();
 
-//        return posts;
+        return posts;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

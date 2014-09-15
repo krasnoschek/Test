@@ -2,7 +2,15 @@ package org.krasnoschek.model;
 
 public class Post {
 
-    
+
+    public Post() {
+    }
+
+    public Post(String author, String text) {
+        this.author = author;
+        this.text = text;
+    }
+
     private Long id;
     private String author;
     private String text;
