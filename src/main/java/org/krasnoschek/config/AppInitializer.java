@@ -11,11 +11,6 @@ import javax.servlet.ServletRegistration;
 
 public class AppInitializer extends AbstractSecurityWebApplicationInitializer {
 
-    public AppInitializer() {
-//        super(SecurityConfig.class);
-    }
-
-
     @Override
     protected void beforeSpringSecurityFilterChain(ServletContext servletContext) {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
@@ -26,7 +21,7 @@ public class AppInitializer extends AbstractSecurityWebApplicationInitializer {
         ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(context));
 
         dispatcher.setLoadOnStartup(1);
-        dispatcher.addMapping("/*");
+        dispatcher.addMapping("/api/*");
     }
 
 }

@@ -1,7 +1,8 @@
 apply plugin: 'war'
 
 repositories {
-    mavenCentral()
+    mavenCentral();
+
 }
 
 dependencies {
@@ -10,10 +11,13 @@ dependencies {
     compile ('org.springframework.security:spring-security-config:3.2.4.RELEASE')
     compile ('org.springframework.security:spring-security-core:3.2.4.RELEASE')
 
+
     compile ('org.springframework:spring-webmvc:4.1.0.RELEASE')
 
 
-//    compile 'org.springframework.data:spring-data-mongodb:1.4.2.RELEASE'
+    compile 'org.springframework.data:spring-data-mongodb:1.6.0.RELEASE'
+    compile 'org.mongodb:mongo-java-driver:2.12.3'
+
     compile 'com.fasterxml.jackson.core:jackson-databind:2.4.1.1'
 
     //for tomcat wirk

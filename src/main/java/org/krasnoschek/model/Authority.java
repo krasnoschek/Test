@@ -3,7 +3,14 @@ package org.krasnoschek.model;
 
 import org.springframework.security.core.GrantedAuthority;
 
-public class Authority implements GrantedAuthority {
+public class Authority extends BaseModel implements GrantedAuthority {
+
+    public Authority(String auth) {
+        this.auth = auth;
+    }
+
+    public Authority() {
+    }
 
     private String auth;
 

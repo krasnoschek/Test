@@ -1,6 +1,6 @@
 package org.krasnoschek.model;
 
-public class Post {
+public class Post extends BaseModel {
 
 
     public Post() {
@@ -11,17 +11,8 @@ public class Post {
         this.text = text;
     }
 
-    private Long id;
     private String author;
     private String text;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getAuthor() {
         return author;
